@@ -8,9 +8,15 @@ numbers = [     [10, 11, 12, 13, 14],
 # 	row = list(map(int, input('Enter 5 values for a row: ').split()))
 # 	numbers.append(row)
 
+
 rnum = len(numbers)
 cnum = len(numbers[0])
 
 # ******************************
 # Make your Code
 # ******************************
+for i in range(rnum):
+    row_sum = sum(numbers[i])
+    print('The summation of row {0}: {1}'.format(i,row_sum))
+
+
